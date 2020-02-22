@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function howManyAge()
+            {
+               var s =  prompt('Введите ваш возраст (полных лет)?');
+               if (s == '' || s == ' ')
+            {
+                alert('Пустое поле и пробел не допускаются!!!');
+                exit;
+            }
+               return s;
+            }
+
+            function checkAge()
+            {
+                if (howManyAge() > 18 ) 
+                     return true;
+                else 
+                     return confirm('Родители разрешили?');
+            }
+            if (checkAge()) 
+                 alert('Доступ разрешен');
+            else 
+                 alert('В доступе отказано');
+        </script>
+    </body>
+</html>
